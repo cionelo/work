@@ -38,6 +38,7 @@ a { color: inherit; text-decoration: none; }
   --space-2:  1rem;     /* 16px */
   --space-3:  1.5rem;   /* 24px */
   --space-4:  2rem;     /* 32px */
+  --space-5:  2.5rem;   /* 40px */
   --space-6:  3rem;     /* 48px */
   --space-8:  4rem;     /* 64px */
   --space-12: 6rem;     /* 96px */
@@ -272,13 +273,17 @@ body {
    NAV
 ═══════════════════════════════════════════════════ */
 #nav {
-  position: static;
+  position: sticky;
+  top: 0;
   width: 100%;
   height: 56px;
   z-index: 100;
+  background: rgba(28, 25, 23, 0.96);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.06);
   transition: background 0.3s ease, border-color 0.3s ease,
               backdrop-filter 0.3s ease, box-shadow 0.3s ease;
-  border-bottom: 1px solid transparent;
 }
 
 .nav-inner {
@@ -339,9 +344,11 @@ body {
 
 @media (min-width: 768px) {
   #nav {
-    position: sticky;
-    top: 0;
     height: 64px;
+    background: transparent;
+    border-bottom: 1px solid transparent;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   .nav-cta { display: inline-flex; }
@@ -435,7 +442,7 @@ body {
   padding-top: var(--space-1);
 }
 
-.hero-actions .btn-primary { width: 100%; }
+.hero-actions .btn-primary { width: 100%; max-width: 360px; }
 
 .hero-demo-note {
   font-size: 13px;
@@ -1197,10 +1204,35 @@ html, body { max-width: 100%; overflow-x: hidden; }
 
 .about-photo {
   width: 100%;
+  max-width: 280px;
   border-radius: 12px;
   object-fit: cover;
   aspect-ratio: 3 / 4;
   display: block;
 }
 
+@media (min-width: 600px) {
+  .about-photo {
+    max-width: none;
+  }
+}
+
 .about-block--with-photo .about-section-title { margin-top: 0; }
+
+
+/* ═══════════════════════════════════════════════════
+   REDUCED MOTION
+═══════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
