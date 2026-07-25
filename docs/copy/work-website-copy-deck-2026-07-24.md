@@ -62,7 +62,7 @@
 ### Proof
 - Eyebrow: Recent work
 - Line 1: A children's museum. About 60 staff, subs, and volunteers on one schedule, with family information locked down.
-- Line 2: A college athletics department. 5,100+ records in one place, three staff working the same list, attendance up 75%.
+- Line 2: A college athletics department. 5,100+ records in one place, three staff working the same list, camp attendance up 75%.
 - Line 3: A university advising office. An assistant that answers from the office's own documents and cites the file it used.
 - Link: Read the case studies →
 
