@@ -204,6 +204,7 @@ Only these strings change. Everything else on the page stays.
 - "Who I am" closing sentence: A computer science degree and a master's in sport management. I've built software, and I've studied how organizations run, which is why the system ends up fitting the organization instead of the other way around.
 - Closing CTA headline: Let's talk about where your information lives.
 - Closing CTA button: Book a walkthrough
+- "How I work with clients" engagement-model sentence: I keep it straightforward. The walkthrough is free and there's nothing to commit to. If you're not sure a system makes sense for your organization, that's the normal place to start, and I'll tell you if the answer is no.
 
 ---
 
