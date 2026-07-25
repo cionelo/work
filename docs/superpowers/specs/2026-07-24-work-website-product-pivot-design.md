@@ -85,16 +85,19 @@ The 12-service menu is deleted. Website work and SEO survive only as a sentence 
 
 Filename stays; the page is titled "Case Studies." Three studies, one per capability. Anonymized. Each gets a styled empty visual slot with descriptive alt text and a `TODO` comment — never a broken image.
 
-**1. A college athletics department** — *records + analytics + role-based access*
-Results scattered across four platforms and PDFs in five states, with no way to tie a performance to the coach behind it. Now: one database of 5,100+ athlete performances, 600+ programs, and 686 coaches and athletic directors — 388 with a verified email. **Three coaches worked the same list in parallel without stepping on each other.** Recruiting outreach names the athlete and the race instead of blasting a form letter.
+**Order is deliberate: identification, then outcome, then differentiator.** The reader has to see their own week in the first card or they leave. Pain relief comes before growth for an organization with three year-round staff and no IT.
+
+**1. A children's museum with ~60 staff, subs, and volunteers** — *access + records*
+Two schedules that drifted apart, subs found by texting one person at a time, family and staff information sitting behind an "anyone with link" URL. This is the card that makes a camp director, clinic manager, or nonprofit ED recognize their own operation.
+Status wording: **built and delivered; rollout in progress.**
+
+**2. A college athletics department** — *records + analytics + role-based access*
+Opens generically — thousands of records trapped in four incompatible sources, three staff working one list in parallel — and only then names the sport. A non-athletics reader must not bounce at the headline.
+One database of 5,100+ athlete performances, 600+ programs, and 686 coaches and athletic directors, 388 with a verified email. **Three coaches worked the same list simultaneously without stepping on each other** — role-based access demonstrated on real users, on the same page that claims it. Outreach names the athlete and the race instead of blasting a form letter.
 
 **Result: camp attendance up 75% year over year** (~40 to 70+), plus first-time relationships with rural programs that never get contacted and early touches on athletes who matter for college recruiting two seasons out.
 
-Lead this case study with the parallel-coaches detail, not a count. It demonstrates role-based access on real users on the same page that claims it — no number does that.
-
-**2. A children's museum with ~60 staff, subs, and volunteers** — *access + records*
-Two schedules that drifted apart, subs found by texting one person at a time, family and staff information sitting behind an "anyone with link" URL.
-Status wording: **built and delivered; rollout in progress.**
+This card carries the hard outcome and the only live, measured system on the page. It answers what the first card produces.
 
 **3. A university advising office** — *the AI layer*
 Answers from the office's own documents, cites the file it came from, flags anything unverified in over a year, and says "not in my knowledge base" instead of guessing.
