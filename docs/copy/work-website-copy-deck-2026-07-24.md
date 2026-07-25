@@ -9,7 +9,7 @@
 
 | Page | `<title>` | `<meta name="description">` |
 |---|---|---|
-| index.html | Custom Operations Systems for Small Organizations \| Nehemiah Cionelo | One internal system per organization: role-based access, every record in one place, the analytics you run on, and an AI trained on your own files. Built on top of the tools you already pay for. |
+| index.html | Custom Operations Systems for Small Organizations \| Nehemiah Cionelo | One internal system per organization: role-based access, every record in one place, the analytics you run on, and an AI trained on your own files, now in early rollout. Built on top of the tools you already pay for. |
 | system.html | How It Works — Custom Operations Systems \| itsnemo.dev | Role-based access, records, analytics, and an AI trained on your documents. What each one does in practice, and what ongoing support costs. |
 | portfolio.html | Case Studies — Operations Systems in the Field \| itsnemo.dev | Three builds: a children's museum with ~60 staff, a college athletics department, and a university advising office. |
 | about.html | About — Nehemiah Cionelo, Developer in Gunnison, Colorado | Developer in Gunnison, Colorado. I build custom internal operations systems for small organizations, and I work remotely with clients anywhere. |
@@ -26,7 +26,7 @@
 - Eyebrow: Custom operations systems · Gunnison, Colorado & remote
 - H1 line 1: Your team's work lives in five places.
 - H1 accent line: It should live in one.
-- Subline: I build one internal system per organization. Who can see what, every record in one place, and the numbers you run on. An AI trained on your own files comes with it.
+- Subline: I build one internal system per organization. Who can see what, every record in one place, and the numbers you run on. An AI trained on your own files can come with it.
 - Primary CTA: Book a walkthrough
 - Secondary CTA: See how the system works →
 - Note under CTAs: Free walkthrough. I work with a small number of organizations at a time.
@@ -52,12 +52,12 @@
 - Card 1 — Role-Based Access (icon `shield-check`): Everyone sees exactly what their job requires. Nothing else.
 - Card 2 — Records & CRM (icon `database`): People, clients, schedules, history. Edited once, correct everywhere.
 - Card 3 — Analytics (icon `bar-chart-3`): The numbers you run on, without opening a spreadsheet.
-- Card 4 — AI Trained On Your Files (icon `sparkles`): Ask it about your own documents. It answers, and names the file it came from.
+- Card 4 — AI Trained On Your Files (icon `sparkles`): Ask it about your own documents. It answers, and names the file it came from. Rolling out now with a first group of organizations.
 
 ### Built on what you already pay for
 - Eyebrow: How it fits
 - Title: It sits on top of what you already use.
-- Body: Your registration system, your payroll, your file storage all stay where they are. I don't rebuild software you're already paying for. The system connects to what's there, links out to it, and owns only the parts nothing else covers. Try to replace all of it at once and you get a six-month migration instead of something you're using in weeks.
+- Body: Your registration system, your payroll, your file storage all stay where they are. I don't rebuild software you're already paying for. The system connects to what's there, links out to it, and owns only the parts nothing else covers. Try to replace all of it at once and you get a migration that takes months instead of something you're using in weeks.
 
 ### Proof
 - Eyebrow: Recent work
@@ -122,12 +122,12 @@ Access · Records · Analytics · AI · Pricing
 - One-liner: It answers from your files, and tells you which file.
 - What it is: An assistant grounded in your own documents: policies, handbooks, procedures, past records. Ask in plain language and get an answer that names its source.
 - How it behaves: It says "not in my knowledge base" instead of inventing an answer. It flags anything it hasn't seen verified in over a year. And it never becomes the official record. It points you to the system that is.
-- Your documents stay yours: I keep each organization's material separate. Nothing from your files trains anything outside your own system.
+- Your documents stay yours: I keep each organization's material separate from every other client's. Nothing from your files is used to train a model.
 - Where it stands: Rolling out with a small first group of organizations. If you're a fit, I'll tell you. If you're not one yet, I'll tell you that too.
 
 ### 5. Built on what you already pay for
 - One-liner: I don't rebuild what already works.
-- Body: Your registration system, your payroll, your file storage stay where they are. The system reads from them, links out to them, and owns only the parts nothing else covers. Replacing software that already works is how a three-week project turns into a nine-month one.
+- Body: Your registration system, your payroll, your file storage stay where they are. The system reads from them, links out to them, and owns only the parts nothing else covers. Replacing software that already works is how a three-week project turns into one that takes many months.
 
 ### 6. Who this isn't for
 - Intro: Three kinds of projects I turn down, so neither of us wastes a call:
@@ -164,7 +164,7 @@ Access · Records · Analytics · AI · Pricing
 ### Hero
 - Eyebrow: Case studies
 - H1: Three organizations, one system.
-- Subline: Names and details are left out on purpose. These are live operations. Every number here was counted, not estimated.
+- Subline: Names and details are left out on purpose. These are real organizations, and the numbers are counted, not estimated.
 
 ### Case 1 — A children's museum
 - Tags: Role-based access · Records
@@ -178,17 +178,18 @@ Access · Records · Analytics · AI · Pricing
 - The situation: Thousands of performance records spread across four incompatible platforms and a stack of PDFs. No way to connect a result to the person running the program behind it. On top of that, three staff needed to work the same list at once without duplicating each other's outreach.
 - What got built: One database holding 5,100+ athlete performances, 600+ programs, and 686 coaches and athletic directors across five states and regions, 388 of them with a verified email. Contact discovery with confidence scoring, so nobody wastes a morning on a dead address. Outreach written from what each program did that season: team wins, podium finishes, standout individual races, athletes by name.
 - Three people, one list: All three staff worked the same list simultaneously without stepping on each other. That's the role-based access piece, in real daily use.
-- The result: Attendance up 75% year over year, about forty to seventy-plus. First-time relationships with rural programs nobody had been contacting, and early contact with athletes who matter two seasons from now.
+- The result: Camp attendance up 75% year over year, about forty to seventy-plus. First-time relationships with rural programs nobody had been contacting, and early contact with athletes who matter two seasons from now.
 
 ### Case 3 — A university advising office
 - Tags: The AI layer
 - The situation: Program requirements, testing rules, transfer agreements, and policy spread across a public website, a shared drive, and institutional memory. New staff asked the same questions for months. A wrong answer had consequences for a student's schedule or their aid.
 - What got built: An assistant that answers only from the office's own written material. Every answer names the file it came from. Anything not verified in the last twelve months gets flagged as stale. Ask it something outside its coverage and it points you to the right office instead of guessing.
 - Where the line is: It never became the system of record, and it says so in every answer that touches one. An assistant that guesses confidently is worse than no assistant.
+- Status: Built and delivered as an internal tool. The hosted version is in early rollout.
 
 ### Also built
 - A public-health advisory firm: a live data dashboard with an access-controlled editor. It replaced a spreadsheet somebody had to re-publish by hand.
-- A college coaching staff: timing data from eight vendor formats in one view.
+- A college coaching staff: timing data from a pile of incompatible vendor formats, in one view.
 - A small food business: ordering that writes straight into the sheet the kitchen already uses.
 
 ### Bottom CTA

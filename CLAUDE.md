@@ -45,6 +45,10 @@ Related: `assets/og-image.png` is referenced by every page's meta tags and does
 not exist. It currently points at `logo-full.png` as a stopgap; a proper
 1200×630 share image belongs in the same session.
 
+Also in that session: the hero logo (`logo-full-transparent-bg.png`, 2.2 MB)
+and nav logo (`logo-mark.png`, 360 KB) need resizing/compression. Real
+performance problem, ruled out of the 2026-07-24 fix wave on purpose.
+
 ## Docs
 
 - Design: `docs/superpowers/specs/2026-07-24-work-website-product-pivot-design.md`

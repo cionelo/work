@@ -25,24 +25,30 @@ document.addEventListener('DOMContentLoaded', () => {
     gsap.registerPlugin(ScrollTrigger);
 
     // Hero text — staggered entrance on load
-    const heroTl = gsap.timeline({ delay: 0.1 });
+    // Respect prefers-reduced-motion: skip the entrance animation and leave the
+    // hero visible in its final state instead of animating it in.
+    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 
-    heroTl
-      .from('.hero-text .eyebrow', {
-        opacity: 0, y: 20, duration: 0.7, ease: 'power3.out'
-      })
-      .from('.hero-headline', {
-        opacity: 0, y: 32, duration: 0.8, ease: 'power3.out'
-      }, '-=0.45')
-      .from('.hero-subline', {
-        opacity: 0, y: 24, duration: 0.7, ease: 'power3.out'
-      }, '-=0.5')
-      .from('.hero-actions', {
-        opacity: 0, y: 20, duration: 0.6, ease: 'power3.out'
-      }, '-=0.45')
-      .from('.hero-visual', {
-        opacity: 0, scale: 0.92, duration: 1, ease: 'power3.out'
-      }, '-=0.8');
+    if (!prefersReducedMotion) {
+      const heroTl = gsap.timeline({ delay: 0.1 });
+
+      heroTl
+        .from('.hero-text .eyebrow', {
+          opacity: 0, y: 20, duration: 0.7, ease: 'power3.out'
+        })
+        .from('.hero-headline', {
+          opacity: 0, y: 32, duration: 0.8, ease: 'power3.out'
+        }, '-=0.45')
+        .from('.hero-subline', {
+          opacity: 0, y: 24, duration: 0.7, ease: 'power3.out'
+        }, '-=0.5')
+        .from('.hero-actions', {
+          opacity: 0, y: 20, duration: 0.6, ease: 'power3.out'
+        }, '-=0.45')
+        .from('.hero-visual', {
+          opacity: 0, scale: 0.92, duration: 1, ease: 'power3.out'
+        }, '-=0.8');
+    }
 
 
     // Scroll-triggered reveals — handle .reveal elements
