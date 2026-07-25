@@ -1,6 +1,6 @@
 # work-website Copy Deck
 
-**Date:** 2026-07-24 · **Status:** humanized, approved
+**Date:** 2026-07-24 · **Status:** humanized, approved 2026-07-24 by Nemo
 **Source of truth for every string on the site.** Edit here first, then the HTML.
 
 ---
@@ -138,7 +138,7 @@ Access · Records · Analytics · AI · Pricing
 ### 7. How engagements work
 - Step 1 — Walkthrough · Free: We go through where your team's information lives: every spreadsheet, folder, and system. I come back with a map and the one thing worth fixing first.
 - Step 2 — First build · One-time, quoted: The smallest system that removes the worst friction. Live in weeks. You use it before you commit to anything bigger.
-- Step 3 — Monthly partnership: Hosting, support, fixes, and small changes. The system grows as the organization does, because every place I've built for needed a second thing about three months after the first.
+- Step 3 — Monthly partnership: Hosting, support, fixes, and small changes. The system grows as the organization does, because every organization I've built for needed a second thing about three months after the first.
 
 ### 8. What it costs
 - Intro: The monthly is published below. The build isn't, because it depends on what you need. That's what the walkthrough is for.
@@ -234,3 +234,10 @@ Three further non-changes, for the record:
   stays where the line is scannable and the word stays where it is prose.
 - "AI Trained On Your Files" keeps its title-case "On". The design spec fixes this
   card label in three places; changing it here would desync the deck from the spec.
+
+One label change was applied and approved:
+
+- **system.html §4: `What makes it different:` → `How it behaves:`.** The humanizer pass
+  renamed it because "what makes it different" is competitive-marketing framing for what
+  is plainly a description of behavior. Reviewed and upheld on the merits by Nemo,
+  2026-07-24. This is the only sub-label the pass changed. Task 7 pastes it.
