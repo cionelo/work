@@ -50,13 +50,25 @@ REQUIRED_PAIRS = [
     ("children's museum", "Built and delivered"),
 ]
 
+# Site's own canonical base URL. Meta content values (e.g. og:image) built on this
+# prefix point at local assets and are worth resolving like any other local target.
+BASE_URL = "https://itsnemo.dev/work/"
+
 TAG_RE = re.compile(r'(?:href|src)="([^"]+)"')
+CONTENT_RE = re.compile(r'content="([^"]+)"')
 ID_RE = re.compile(r'id="([^"]+)"')
 
 
 def strip_comments(text):
-    """Blank out HTML comments so TODO notes don't trip the copy rules."""
-    return re.sub(r"<!--.*?-->", lambda m: " " * len(m.group(0)), text, flags=re.S)
+    """Blank out HTML comments so TODO notes don't trip the copy rules.
+
+    Preserves newlines inside the comment so line numbers in later reports still
+    line up with the real file — only non-newline characters are blanked.
+    """
+    def blank(m):
+        return "".join(c if c == "\n" else " " for c in m.group(0))
+
+    return re.sub(r"<!--.*?-->", blank, text, flags=re.S)
 
 
 def check_banned(name, text, problems):
@@ -93,6 +105,13 @@ def check_links(name, text, ids_by_file, problems):
                 target_file = name
             if anchor and target_file in ids_by_file and anchor not in ids_by_file[target_file]:
                 problems.append(f"{name}:{i}: dead anchor -> {target}")
+        for target in CONTENT_RE.findall(line):
+            if not target.startswith(BASE_URL):
+                continue
+            path_part = target[len(BASE_URL):]
+            resolved = (ROOT / path_part).resolve()
+            if not resolved.exists():
+                problems.append(f"{name}:{i}: missing target -> {target}")
 
 
 def main():
