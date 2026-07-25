@@ -1,36 +1,4 @@
 <!DOCTYPE html>
-<!--
-  portfolio.html — itsnemo.dev/work/portfolio.html
-  Recent client work showcase.
-
-  CURRENT LAYOUT: Option A — card grid (3 cards, 1-2-3 column responsive)
-  Each card: icon · title · description · tech tags · external link
-
-  ─────────────────────────────────────────────────────
-  UPGRADING TO OPTION B (case study rows)
-  ─────────────────────────────────────────────────────
-  When screenshots/visuals are available, replace the .card-grid with
-  a .project-list of .project-row entries. Each row should be:
-
-    <article class="project-row reveal">
-      <div class="project-row-visual">
-        <img src="assets/images/[project].png" alt="[Project]">
-      </div>
-      <div class="project-row-text">
-        <p class="eyebrow">[Category]</p>
-        <h2 class="project-row-title">[Project Name]</h2>
-        <p class="project-row-problem"><strong>Problem:</strong> ...</p>
-        <p class="project-row-solution"><strong>What I built:</strong> ...</p>
-        <p class="project-row-outcome"><strong>Outcome:</strong> ...</p>
-        <div class="card-tags">...</div>
-        <a href="..." class="btn-primary" target="_blank">View project</a>
-      </div>
-    </article>
-
-  Alternate left/right with: .project-row:nth-child(even) { flex-direction: row-reverse; }
-  Add .project-list and .project-row CSS to style.css (no JS changes needed).
-  ─────────────────────────────────────────────────────
--->
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -93,62 +61,103 @@
   <!-- PAGE HEADER -->
   <section id="portfolio-hero" class="services-hero">
     <div class="container">
-      <p class="eyebrow reveal">Portfolio</p>
+      <p class="eyebrow reveal">Case studies</p>
       <h1 class="services-headline reveal" style="transition-delay:0.1s">
-        Recent work.
+        Three organizations, one system.
       </h1>
       <p class="services-subline reveal" style="transition-delay:0.2s">
-        Some things I've built, for actual businesses with actual problems.
+        Names and details are left out on purpose. These are live operations. Every number here was counted, not estimated.
       </p>
     </div>
   </section>
 
-  <!-- PROJECT CARDS -->
-  <section id="projects-grid" class="section-surface">
-    <div class="container">
-      <div class="card-grid">
+  <!-- CASE STUDIES -->
+  <section id="case-studies" class="section-surface">
+    <div class="container container--narrow">
 
-        <!-- Little Bites -->
-        <div class="card card--project reveal">
-          <i data-lucide="shopping-cart" class="card-icon"></i>
-          <h3 class="card-title">Little Bites</h3>
-          <p class="card-desc">An ordering system for a small food business that was running on Google Forms. Customers pick items and customize each one, orders drop into a Google Sheet the kitchen already uses. The owner can pause the menu while updating it each week.</p>
-          <div class="card-tags">
-            <span class="card-tag">JavaScript</span>
-            <span class="card-tag">Google Apps Script</span>
-            <span class="card-tag">Google Sheets</span>
-          </div>
-          <a href="https://itsnemo.dev/little-bites-menu-system/" class="card-link" target="_blank" rel="noopener">View project →</a>
+      <article class="case-block reveal">
+        <div class="card-tags">
+          <span class="card-tag">Role-based access</span>
+          <span class="card-tag">Records</span>
+        </div>
+        <h2 class="section-title">A children's museum</h2>
+
+        <!-- TODO (separate session, see CLAUDE.md): replace with a redacted screenshot
+             or a dummy-data demo instance. Do not ship a real client screenshot. -->
+        <div class="case-visual" role="img" aria-label="Screenshot pending: staff schedule and coverage interface">
+          <span>Demo coming soon</span>
         </div>
 
-        <!-- Nashville Home Improvements -->
-        <div class="card card--project reveal" style="transition-delay:0.1s">
-          <i data-lucide="home" class="card-icon"></i>
-          <h3 class="card-title">Nashville Home Improvements</h3>
-          <p class="card-desc">A website for a Nashville home improvement contractor. Their main ask: show up when someone nearby searches for the kind of work they do.</p>
-          <div class="card-tags">
-            <span class="card-tag">HTML / CSS</span>
-            <span class="card-tag">JavaScript</span>
-            <span class="card-tag">Local SEO</span>
-          </div>
-          <a href="https://nhitn.netlify.app/" class="card-link" target="_blank" rel="noopener">View project →</a>
+        <p class="case-label">The situation</p>
+        <p class="fit-body">About sixty staff, subs, and volunteers across three hiring tracks. The schedule lived in two separate documents that drifted apart within days. Finding a sub meant texting people one at a time and hoping. Staff and family information sat in a folder anyone with the link could open.</p>
+
+        <p class="case-label">What got built</p>
+        <p class="fit-body">One schedule everyone reads from. A personal "my shifts" view for every person, plus a calendar feed that syncs straight to their phone. A sub-coverage workflow that tracks requested, offered, and confirmed instead of living in text messages. Role-based access so nobody sees more than their job requires.</p>
+
+        <p class="case-label">What stayed</p>
+        <p class="fit-body">Registration, billing, and payroll never moved. They're in systems the museum already pays for, and rebuilding them would have been the fastest way to blow the budget.</p>
+
+        <p class="case-status">Built and delivered. Rollout in progress.</p>
+      </article>
+
+      <article class="case-block reveal">
+        <div class="card-tags">
+          <span class="card-tag">Records</span>
+          <span class="card-tag">Analytics</span>
+          <span class="card-tag">Role-based access</span>
+        </div>
+        <h2 class="section-title">A college athletics department</h2>
+
+        <!-- TODO (separate session, see CLAUDE.md): replace with a redacted screenshot
+             or a dummy-data demo instance. Do not ship a real client screenshot. -->
+        <div class="case-visual" role="img" aria-label="Screenshot pending: athlete performance database interface">
+          <span>Demo coming soon</span>
         </div>
 
-        <!-- PACE -->
-        <div class="card card--project reveal" style="transition-delay:0.2s">
-          <i data-lucide="activity" class="card-icon"></i>
-          <h3 class="card-title">PACE</h3>
-          <p class="card-desc">A dashboard for college cross country and track coaches. It pulls race timing data from 8 different vendor systems — formats vary wildly — and puts them in one consistent view so coaches can read splits without jumping between PDFs and spreadsheets.</p>
-          <div class="card-tags">
-            <span class="card-tag">Python</span>
-            <span class="card-tag">React</span>
-            <span class="card-tag">ETL Pipeline</span>
-            <span class="card-tag">Supabase</span>
-          </div>
-          <a href="https://pace-kappa.vercel.app/" class="card-link" target="_blank" rel="noopener">View project →</a>
+        <p class="case-label">The situation</p>
+        <p class="fit-body">Thousands of performance records spread across four incompatible platforms and a stack of PDFs. No way to connect a result to the person running the program behind it. On top of that, three staff needed to work the same list at once without duplicating each other's outreach.</p>
+
+        <p class="case-label">What got built</p>
+        <p class="fit-body">One database holding 5,100+ athlete performances, 600+ programs, and 686 coaches and athletic directors across five states and regions, 388 of them with a verified email. Contact discovery with confidence scoring, so nobody wastes a morning on a dead address. Outreach written from what each program did that season: team wins, podium finishes, standout individual races, athletes by name.</p>
+
+        <p class="case-label">Three people, one list</p>
+        <p class="fit-body">All three staff worked the same list simultaneously without stepping on each other. That's the role-based access piece, in real daily use.</p>
+
+        <p class="case-label">The result</p>
+        <p class="fit-body">Attendance up 75% year over year, about forty to seventy-plus. First-time relationships with rural programs nobody had been contacting, and early contact with athletes who matter two seasons from now.</p>
+      </article>
+
+      <article class="case-block reveal">
+        <div class="card-tags">
+          <span class="card-tag">The AI layer</span>
+        </div>
+        <h2 class="section-title">A university advising office</h2>
+
+        <!-- TODO (separate session, see CLAUDE.md): replace with a redacted screenshot
+             or a dummy-data demo instance. Do not ship a real client screenshot. -->
+        <div class="case-visual" role="img" aria-label="Screenshot pending: document-grounded advising assistant interface">
+          <span>Demo coming soon</span>
         </div>
 
-      </div>
+        <p class="case-label">The situation</p>
+        <p class="fit-body">Program requirements, testing rules, transfer agreements, and policy spread across a public website, a shared drive, and institutional memory. New staff asked the same questions for months. A wrong answer had consequences for a student's schedule or their aid.</p>
+
+        <p class="case-label">What got built</p>
+        <p class="fit-body">An assistant that answers only from the office's own written material. Every answer names the file it came from. Anything not verified in the last twelve months gets flagged as stale. Ask it something outside its coverage and it points you to the right office instead of guessing.</p>
+
+        <p class="case-label">Where the line is</p>
+        <p class="fit-body">It never became the system of record, and it says so in every answer that touches one. An assistant that guesses confidently is worse than no assistant.</p>
+      </article>
+
+      <section class="case-also reveal">
+        <p class="eyebrow">Also built</p>
+        <ul class="proof-list">
+          <li>A public-health advisory firm: a live data dashboard with an access-controlled editor. It replaced a spreadsheet somebody had to re-publish by hand.</li>
+          <li>A college coaching staff: timing data from eight vendor formats in one view.</li>
+          <li>A small food business: ordering that writes straight into the sheet the kitchen already uses.</li>
+        </ul>
+      </section>
+
     </div>
   </section>
 
