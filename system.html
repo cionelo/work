@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works — Custom Operations Systems | itsnemo.dev</title>
+  <meta name="description" content="Role-based access, records, analytics, and an AI trained on your documents. What each one does in practice, and what ongoing support costs.">
+  <link rel="canonical" href="https://itsnemo.dev/work/system.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="How It Works — Custom Operations Systems | itsnemo.dev">
+  <meta property="og:description" content="Role-based access, records, analytics, and an AI trained on your documents. What each one does in practice, and what ongoing support costs.">
+  <!-- TODO: replace with a purpose-built 1200x630 share image (see CLAUDE.md) -->
+  <meta property="og:image" content="https://itsnemo.dev/work/assets/logo-full.png">
+  <meta property="og:url" content="https://itsnemo.dev/work/system.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;1,9..40,400&display=swap" rel="stylesheet">
+
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- GSAP + ScrollTrigger -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+  <link rel="icon" href="assets/logo-mark.png" type="image/png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav id="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo" aria-label="itsnemo.dev home">
+        <img src="assets/logo-mark.png" alt="itsnemo.dev" class="nav-logo-img" onerror="this.style.display='none'">
+        <span class="nav-logo-text">itsnemo.dev</span>
+      </a>
+      <div class="nav-links">
+        <a href="portfolio.html" class="nav-link">Case Studies</a>
+        <a href="system.html" class="nav-link nav-link--active">How It Works</a>
+        <a href="about.html" class="nav-link">About</a>
+      </div>
+      <a href="index.html#contact" class="btn-ghost nav-cta">Book a walkthrough</a>
+      <button class="nav-hamburger" id="navHamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="nav-mobile-menu" id="navMobileMenu">
+      <a href="portfolio.html" class="nav-mobile-link">Case Studies</a>
+      <a href="system.html" class="nav-mobile-link nav-mobile-link--active">How It Works</a>
+      <a href="about.html" class="nav-mobile-link">About</a>
+      <a href="index.html#contact" class="btn-primary nav-mobile-cta">Book a walkthrough</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <section id="services-hero" class="services-hero">
+    <div class="container">
+      <p class="eyebrow reveal">The system</p>
+      <h1 class="services-headline reveal" style="transition-delay:0.1s">
+        One system, built around how your organization already works.
+      </h1>
+      <p class="services-subline reveal" style="transition-delay:0.2s">
+        Four parts, one system. Here's what each one does in practice, and what it costs to keep running.
+      </p>
+    </div>
+  </section>
+
+  <!-- ANCHOR NAV -->
+  <div class="services-anchor-bar">
+    <div class="container">
+      <a href="#access" class="services-anchor-link">Access</a>
+      <span class="services-anchor-dot" aria-hidden="true">·</span>
+      <a href="#records" class="services-anchor-link">Records</a>
+      <span class="services-anchor-dot" aria-hidden="true">·</span>
+      <a href="#analytics" class="services-anchor-link">Analytics</a>
+      <span class="services-anchor-dot" aria-hidden="true">·</span>
+      <a href="#ai" class="services-anchor-link">AI</a>
+      <span class="services-anchor-dot" aria-hidden="true">·</span>
+      <a href="#pricing" class="services-anchor-link">Pricing</a>
+    </div>
+  </div>
+
+  <!-- 1: ROLE-BASED ACCESS -->
+  <section id="access" class="services-bucket section-surface">
+    <div class="container">
+      <div class="bucket-header reveal">
+        <h2 class="section-title">Role-based access</h2>
+        <p class="bucket-desc">Everyone sees what their job requires. Nothing else.</p>
+      </div>
+      <div class="service-list">
+        <div class="service-entry reveal">
+          <div class="service-entry-inner">
+            <p class="service-plain">Every person gets a role. The role decides what they can open, what they can change, and what they never see. It's enforced in the database, not hidden in the interface.</p>
+            <p class="service-example"><span class="service-label">What it looks like</span> A teacher opens the app and sees their own shifts. An admin sees all sixty. A board member sees the summary and no personal information at all.</p>
+            <p class="service-why"><span class="service-label">Why it matters</span> Most exposure isn't a break-in. It's a folder shared with "anyone with the link" three years ago and forgotten.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2: RECORDS -->
+  <section id="records" class="services-bucket section-bg">
+    <div class="container">
+      <div class="bucket-header reveal">
+        <h2 class="section-title">Records</h2>
+        <p class="bucket-desc">One place, edited once.</p>
+      </div>
+      <div class="service-list">
+        <div class="service-entry reveal">
+          <div class="service-entry-inner">
+            <p class="service-plain">People, clients, families, staff, schedules, history. One record per thing, one place to change it.</p>
+            <p class="service-example"><span class="service-label">What it looks like</span> A shift moves. It's correct on the schedule, on the calendar feed, and on the coverage list at the same time. Nobody updates a second document.</p>
+            <p class="service-why"><span class="service-label">Why it matters</span> Two documents holding the same information don't drift apart eventually. They drift apart immediately.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3: ANALYTICS -->
+  <section id="analytics" class="services-bucket section-surface">
+    <div class="container">
+      <div class="bucket-header reveal">
+        <h2 class="section-title">Analytics</h2>
+        <p class="bucket-desc">The numbers you run on, on a page.</p>
+      </div>
+      <div class="service-list">
+        <div class="service-entry reveal">
+          <div class="service-entry-inner">
+            <p class="service-plain">The handful of questions you ask every month, answered on screen. It isn't a BI tool, and it isn't another spreadsheet you have to rebuild each time.</p>
+            <p class="service-example"><span class="service-label">What it looks like</span> Who's under-scheduled this week, and which programs fill while others sit half empty. Last season next to this one on the same screen.</p>
+            <p class="service-why"><span class="service-label">Why it matters</span> If a number takes twenty minutes to get, you stop asking for it.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4: THE AI LAYER -->
+  <section id="ai" class="services-bucket section-bg">
+    <div class="container">
+      <div class="bucket-header reveal">
+        <h2 class="section-title">The AI layer</h2>
+        <p class="bucket-desc">It answers from your files, and tells you which file.</p>
+      </div>
+      <div class="service-list">
+        <div class="service-entry reveal">
+          <div class="service-entry-inner">
+            <p class="service-plain">An assistant grounded in your own documents: policies, handbooks, procedures, past records. Ask in plain language and get an answer that names its source.</p>
+            <p class="service-example"><span class="service-label">How it behaves</span> It says "not in my knowledge base" instead of inventing an answer. It flags anything it hasn't seen verified in over a year. And it never becomes the official record. It points you to the system that is.</p>
+            <p class="service-why"><span class="service-label">Your documents stay yours</span> I keep each organization's material separate. Nothing from your files trains anything outside your own system.</p>
+            <p class="ai-status"><span class="service-label">Where it stands</span> Rolling out with a small first group of organizations. If you're a fit, I'll tell you. If you're not one yet, I'll tell you that too.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5: BUILT ON WHAT YOU ALREADY PAY FOR -->
+  <section id="fit" class="services-bucket section-surface">
+    <div class="container container--narrow">
+      <div class="bucket-header reveal">
+        <h2 class="section-title">Built on what you already pay for</h2>
+        <p class="bucket-desc">I don't rebuild what already works.</p>
+      </div>
+      <p class="fit-body reveal">Your registration system, your payroll, your file storage stay where they are. The system reads from them, links out to them, and owns only the parts nothing else covers. Replacing software that already works is how a three-week project turns into a nine-month one.</p>
+    </div>
+  </section>
+
+  <!-- 6: WHO THIS ISN'T FOR -->
+  <section id="not-for" class="services-bucket section-bg">
+    <div class="container container--narrow">
+      <div class="bucket-header reveal">
+        <h2 class="section-title">Who this isn't for</h2>
+        <p class="bucket-desc">Three kinds of projects I turn down, so neither of us wastes a call:</p>
+      </div>
+      <ul class="not-for-list reveal">
+        <li>Solo operators. One person with a notebook doesn't need this, and I'd be selling you overhead.</li>
+        <li>Anyone who needs it live next week. A first build takes weeks. There's no version of this that ships on Friday.</li>
+        <li>Anyone who wants a marketing website with nothing behind it. I used to do that work. I don't anymore.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- 7: HOW ENGAGEMENTS WORK -->
+  <section id="engagements" class="section-surface">
+    <div class="container container--narrow">
+      <div class="section-header reveal">
+        <p class="eyebrow">How engagements work</p>
+      </div>
+      <ol class="step-list">
+        <li class="reveal">
+          <span class="step-num">1</span>
+          <h3 class="step-title">Walkthrough <span class="step-price">Free</span></h3>
+          <p class="step-desc">We go through where your team's information lives: every spreadsheet, folder, and system. I come back with a map and the one thing worth fixing first.</p>
+        </li>
+        <li class="reveal" style="transition-delay:0.1s">
+          <span class="step-num">2</span>
+          <h3 class="step-title">First build <span class="step-price">One-time, quoted</span></h3>
+          <p class="step-desc">The smallest system that removes the worst friction. Live in weeks. You use it before you commit to anything bigger.</p>
+        </li>
+        <li class="reveal" style="transition-delay:0.2s">
+          <span class="step-num">3</span>
+          <h3 class="step-title">Monthly partnership</h3>
+          <p class="step-desc">Hosting, support, fixes, and small changes. The system grows as the organization does, because every organization I've built for needed a second thing about three months after the first.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- 8: WHAT IT COSTS -->
+  <section id="pricing" class="services-bucket section-bg">
+    <div class="container container--narrow">
+      <div class="bucket-header reveal">
+        <h2 class="section-title">What it costs</h2>
+        <p class="bucket-desc">The monthly is published below. The build isn't, because it depends entirely on what you need — that's what the walkthrough is for.</p>
+      </div>
+
+      <table class="pricing-table reveal">
+        <thead>
+          <tr><th scope="col">Tier</th><th scope="col">Monthly</th><th scope="col">Who it's for</th></tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Single tool</th><td class="price">$75</td><td>One tool, a handful of people, no role-based access</td></tr>
+          <tr><th scope="row">Team system</th><td class="price">$150</td><td>The full system with role-based access, up to 40 accounts</td></tr>
+          <tr><th scope="row">Organization</th><td class="price">From $200</td><td>More than 40 accounts</td></tr>
+        </tbody>
+      </table>
+
+      <p class="fit-body reveal"><strong>Included:</strong> hosting, support, fixes, and small changes.<br><strong>Quoted separately:</strong> new features and expansions.</p>
+      <p class="section-anchor reveal">Every build is quoted after the walkthrough. No hourly surprises, and no monthly bill for work nobody asked for.</p>
+    </div>
+  </section>
+
+  <!-- BOTTOM CTA -->
+  <section class="section-contact services-bottom-cta">
+    <div class="container container--narrow">
+      <div class="contact-header reveal">
+        <h2 class="contact-headline">Want to see where your information actually lives?</h2>
+        <a href="index.html#contact" class="btn-primary" style="margin-top: 2rem; display: inline-flex;">Book a walkthrough</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer id="footer">
+    <div class="container">
+      <img src="assets/logo-full-transparent-bg.png" alt="itsnemo.dev" class="footer-logo">
+      <p class="footer-text">itsnemo.dev</p>
+      <p class="footer-copy">© 2026 Nehemiah Cionelo <span class="footer-dot" aria-hidden="true">·</span> All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

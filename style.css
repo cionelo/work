@@ -1304,3 +1304,81 @@ html, body { max-width: 100%; overflow-x: hidden; }
   line-height: 1.65;
   margin: 0;
 }
+
+/* ═══════════════════════════════════════════════════
+   PRICING TABLE + NOT-FOR LIST (system)
+   ═══════════════════════════════════════════════════ */
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: var(--space-6);
+  font-size: 0.9375rem;
+}
+
+.pricing-table th,
+.pricing-table td {
+  text-align: left;
+  padding: var(--space-4) var(--space-3);
+  border-bottom: 1px solid var(--border);
+  vertical-align: top;
+}
+
+.pricing-table thead th {
+  font-family: var(--font-body);
+  font-size: 0.75rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+}
+
+.pricing-table tbody th {
+  font-family: var(--font-display);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.pricing-table .price {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.pricing-table td:last-child { color: var(--text-muted); }
+
+@media (max-width: 600px) {
+  .pricing-table { font-size: 0.875rem; }
+  .pricing-table th,
+  .pricing-table td { padding: var(--space-3) var(--space-2); }
+}
+
+.not-for-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.not-for-list li {
+  position: relative;
+  padding-left: var(--space-6);
+  margin-bottom: var(--space-4);
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.not-for-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+}
+
+.ai-status {
+  margin-top: var(--space-4);
+  padding: var(--space-4);
+  border: 1px solid var(--border-amber, var(--border));
+  border-radius: 8px;
+  color: var(--text-muted);
+  line-height: 1.65;
+}
