@@ -44,10 +44,13 @@ CLIENT_NAMES = [
 ]
 CLIENT_NAME_EXEMPT = {"about.html"}
 
-# Wording the spec pins exactly. If the phrase on the left appears, the phrase on the
-# right must appear in the same file.
+# Wording the spec pins exactly, scoped to the one page each rule is about. If the
+# trigger phrase appears on the named file, the required phrase must appear there
+# too. File-scoped so an unrelated mention elsewhere (e.g. a proof line on
+# index.html) doesn't trip a rule that exists to pin the case study's honest status
+# wording on portfolio.html.
 REQUIRED_PAIRS = [
-    ("children's museum", "Built and delivered"),
+    ("portfolio.html", "children's museum", "Built and delivered"),
 ]
 
 # Site's own canonical base URL. Meta content values (e.g. og:image) built on this
@@ -84,7 +87,9 @@ def check_banned(name, text, problems):
 
 def check_required_pairs(name, text, problems):
     body = strip_comments(text)
-    for trigger, required in REQUIRED_PAIRS:
+    for filename, trigger, required in REQUIRED_PAIRS:
+        if filename != name:
+            continue
         if trigger.lower() in body.lower() and required.lower() not in body.lower():
             problems.append(f"{name}:0: '{trigger}' present but required wording '{required}' missing")
 
