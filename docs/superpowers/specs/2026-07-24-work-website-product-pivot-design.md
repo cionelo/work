@@ -85,9 +85,12 @@ The 12-service menu is deleted. Website work and SEO survive only as a sentence 
 
 Filename stays; the page is titled "Case Studies." Three studies, one per capability. Anonymized. Each gets a styled empty visual slot with descriptive alt text and a `TODO` comment — never a broken image.
 
-**1. A college athletics department** — *records + analytics*
-Results scattered across four platforms and PDFs in five states, with no way to tie a performance to the coach behind it. Now: one database, 388 reachable coaches out of 686, and outreach that names the athlete and the race instead of blasting a form letter.
-Lead with the recruiting outcome once Nemo confirms the figures (§9).
+**1. A college athletics department** — *records + analytics + role-based access*
+Results scattered across four platforms and PDFs in five states, with no way to tie a performance to the coach behind it. Now: one database of 5,100+ athlete performances, 600+ programs, and 686 coaches and athletic directors — 388 with a verified email. **Three coaches worked the same list in parallel without stepping on each other.** Recruiting outreach names the athlete and the race instead of blasting a form letter.
+
+**Result: camp attendance up 75% year over year** (~40 to 70+), plus first-time relationships with rural programs that never get contacted and early touches on athletes who matter for college recruiting two seasons out.
+
+Lead this case study with the parallel-coaches detail, not a count. It demonstrates role-based access on real users on the same page that claims it — no number does that.
 
 **2. A children's museum with ~60 staff, subs, and volunteers** — *access + records*
 Two schedules that drifted apart, subs found by texting one person at a time, family and staff information sitting behind an "anyone with link" URL.
@@ -122,7 +125,24 @@ The line that makes it land: *you're not buying a finished deliverable that star
 
 Plus a capacity line — *I work with a small number of organizations at a time.* True, filters tire-kickers, creates urgency.
 
-**No published prices.** Structure is public; numbers come from the walkthrough. This preserves the per-client pricing that actually closed the museum contract.
+### Published monthly tiers
+
+The monthly is published. The build price is not — it comes from the walkthrough.
+
+| Tier | Price | Who it's for |
+|---|---|---|
+| Single tool | **$75/mo** | One tool, a handful of people, no role-based access |
+| Team system | **$150/mo** | Full system with role-based access, up to 40 accounts |
+| Organization | **from $200/mo** | Over 40 accounts |
+
+**Included:** hosting, support, fixes, and small changes.
+**Quoted separately:** new features and expansions.
+
+At these numbers, publishing removes fear rather than creating it, and the account ladder qualifies buyers without a sales call. "From $200" on the top tier keeps a 400-person organization from holding the lowest price forever — that client is the highest support load and would otherwise be the worst-paying account.
+
+**Placement:** the full table lives on `system.html` only. The home page says *ongoing support starts at $75/month* and links to it. A $75 figure near the top of the home page would anchor the whole offering low before the reader knows what the system is.
+
+The middle tier matches the museum's signed $150/mo, so the ladder is already consistent with a real contract.
 
 ---
 
@@ -137,12 +157,27 @@ Hard constraints. The infrastructure today is a shared quantized model on a lapt
 | Museum system "running in production" | "Built and delivered; rollout in progress" |
 | Client names, logos, real screenshots | Sector descriptions, placeholder slots |
 | "87% email coverage" | "388 of 686" — the 87% counts empty address fields |
+| Any hint the monthly includes unlimited development | "Hosting, support, fixes, and small changes" |
 
 ---
 
-## 9. Open item
+## 9. Verified numbers
 
-**The recruiting outcome number.** The repo has no metrics: reply tracking was planned, never built. The doubling figure lives with Nemo and the coach. Prior-year vs current-year numbers are required before that claim goes on the page. If they can't be confirmed, the case study leads with 388-of-686 instead.
+Every figure below was counted from the source data, not quoted from a README. These are the only numbers cleared for the page.
+
+| Claim | Figure |
+|---|---|
+| Athlete performances | 5,100+ across 7 state and class championship datasets (plus 1,256 at the Southwest regional) |
+| High school programs | 600+ |
+| Coach and AD contacts | 686, of which 388 have a verified email |
+| Roles tracked | Head coaches, assistants, athletic directors, meet directors |
+| Regions | Arizona, Colorado (all four classifications), New Mexico, Utah, Southwest regional |
+| Sources unified | 4 platforms plus PDF results |
+| Camp attendance | ~40 → 70+, up 75% year over year |
+| Parallel users | 3 coaches on one list simultaneously |
+| Museum headcount | ~60 staff, subs, and volunteers |
+
+Do not publish "87% email coverage." 388 of 686 is 57%; the 87% figure counted contacts whose email field was present but empty.
 
 ---
 
