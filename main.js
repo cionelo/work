@@ -221,37 +221,4 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
-
-  /* ── Fix: 5-card grid centering on large screens ─ */
-  // Dynamically center last 2 cards in the "What I Build" grid on ≥1024px
-  function fixFiveCardGrid() {
-    const grid = document.querySelector('.card-grid--5');
-    if (!grid) return;
-    const cards = grid.querySelectorAll('.card');
-    if (cards.length !== 5) return;
-
-    if (window.innerWidth >= 1024) {
-      // Reset inline styles first
-      cards[3].style.gridColumn = '';
-      cards[4].style.gridColumn = '';
-      cards[3].style.marginLeft = '';
-      cards[4].style.marginLeft = '';
-
-      // Place last 2 in a centered row using grid-column
-      grid.style.gridTemplateColumns = 'repeat(6, 1fr)';
-      cards[0].style.gridColumn = 'span 2';
-      cards[1].style.gridColumn = 'span 2';
-      cards[2].style.gridColumn = 'span 2';
-      cards[3].style.gridColumn = '2 / span 2';
-      cards[4].style.gridColumn = '4 / span 2';
-    } else {
-      // Reset
-      grid.style.gridTemplateColumns = '';
-      cards.forEach(c => c.style.gridColumn = '');
-    }
-  }
-
-  fixFiveCardGrid();
-  window.addEventListener('resize', fixFiveCardGrid);
-
 });
