@@ -50,7 +50,8 @@ CLIENT_NAME_EXEMPT = {"about.html"}
 # index.html) doesn't trip a rule that exists to pin the case study's honest status
 # wording on portfolio.html.
 REQUIRED_PAIRS = [
-    ("portfolio.html", "children's museum", "Built and delivered"),
+    # Status truth as of 2026-10: built to spec, demoed on real data, not yet rolled out.
+    ("portfolio.html", "children's museum", "Built to spec and demoed on real schedule data"),
 ]
 
 # Site's own canonical base URL. Meta content values (e.g. og:image) built on this

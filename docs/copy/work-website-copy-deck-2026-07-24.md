@@ -171,7 +171,7 @@ Access · Records · Analytics · AI · Pricing
 - The situation: About sixty staff, subs, and volunteers across three hiring tracks. The schedule lived in two separate documents that drifted apart within days. Finding a sub meant texting people one at a time and hoping. Staff and family information sat in a folder anyone with the link could open.
 - What got built: One schedule everyone reads from. A personal "my shifts" view for every person, plus a calendar feed that syncs straight to their phone. A sub-coverage workflow that tracks requested, offered, and confirmed instead of living in text messages. Role-based access so nobody sees more than their job requires.
 - What stayed: Registration, billing, and payroll never moved. They're in systems the museum already pays for, and rebuilding them would have been the fastest way to blow the budget.
-- Status: Built and delivered. Rollout in progress.
+- Status: Built to spec and demoed on real schedule data. Implementation scheduled for 2026.
 
 ### Case 2 — A college athletics department
 - Tags: Records · Analytics · Role-based access
@@ -185,7 +185,7 @@ Access · Records · Analytics · AI · Pricing
 - The situation: Program requirements, testing rules, transfer agreements, and policy spread across a public website, a shared drive, and institutional memory. New staff asked the same questions for months. A wrong answer had consequences for a student's schedule or their aid.
 - What got built: An assistant that answers only from the office's own written material. Every answer names the file it came from. Anything not verified in the last twelve months gets flagged as stale. Ask it something outside its coverage and it points you to the right office instead of guessing.
 - Where the line is: It never became the system of record, and it says so in every answer that touches one. An assistant that guesses confidently is worse than no assistant.
-- Status: Built and delivered as an internal tool. The hosted version is in early rollout.
+- Status: Built as an internal tool and used daily by the advisor who built it. The public knowledge base is live.
 
 ### Also built
 - A public-health advisory firm: a live data dashboard with an access-controlled editor. It replaced a spreadsheet somebody had to re-publish by hand.
